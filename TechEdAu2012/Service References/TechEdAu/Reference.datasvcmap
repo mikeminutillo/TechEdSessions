@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="c756390d-8e86-45f6-8168-863bed70dbe9" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+  <MetadataSources>
+    <MetadataSource Address="http://odata.msteched.com/teau12/sessions.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="aeaf39e7-86cf-43ef-bd84-c76781eedf19" SourceId="1" SourceUrl="http://odata.msteched.com/teau12/sessions.svc" />
+  </Metadata>
+  <Extensions />
+</ReferenceGroup>

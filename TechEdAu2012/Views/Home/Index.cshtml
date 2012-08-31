@@ -1,0 +1,94 @@
+﻿@model TechEdAu2012.Models.DayViewModel[]
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>TechEd AU 2012 Schedule</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="~/Content/custom_script.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+</head> 
+<body> 
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>TechEd AU 2012</h1>
+	</div>
+
+	<div data-role="content">	
+		<ul data-role="listview" data-inset="true">
+            @foreach (var day in Model)
+            {
+                <li><a href="#@day.Day">@day.Day</a></li>
+            }
+		</ul>		
+	</div>
+
+</div>
+
+@foreach (var day in Model)
+{
+<div data-role="page" id="@day.Day" data-add-back-btn="true" data-back-btn-text="Back">
+	<div data-role="header">
+		<h1>@day.Day</h1>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview" data-inset="true">
+            @{
+                var counter = 0;
+            }
+            @foreach (var block in day.Blocks)
+            {
+			    <li><a href="#@(day.Day)@(counter++)">@block.Name</a></li>
+            }
+		</ul>
+	</div>
+</div>
+}
+
+@foreach (var day in Model)
+{
+    var counter = 0;
+    foreach (var block in day.Blocks)
+    {
+<div data-role="page" id="@(day.Day)@(counter++)" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>@day.Day - @block.Name</h1>
+	</div>
+	<div data-role="content">
+		<ul data-role="listview" data-inset="true">
+            @foreach(var session in block.Sessions)
+            {
+			    <li><a href="#@session.Code">@session.Title <span style="float: right;">@session.Track</span></a></li>
+            }
+		</ul>
+	</div>
+</div>
+    }
+}
+
+@foreach (var session in Model.SelectMany(x => x.Blocks.SelectMany(y => y.Sessions)))
+{
+<div data-role="page" id="@session.Code" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>@session.Start - @session.End<br />@session.Code</h1>
+	</div>
+	<div data-role="content">
+        <h2>@session.Level @session.Title</h2>
+        <em>@session.Speakers</em>
+		<p>@session.Abstract</p>
+        <h3>@session.Room</h3>
+        <h4>@session.Track</h4>
+	</div>
+</div>
+}
+
+</body>
+</html>
