@@ -22,7 +22,6 @@ namespace TechEdAu2012.Models {
 					{ "AZR216", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=30d54592-46a5-e111-b8c3-001ec953730b" },
 					{ "AZR221", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=84048716-42bf-e111-b8c3-001ec953730b" },
 					{ "AZR225", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=1aa581ad-83aa-e111-b8c3-001ec953730b" },
-					{ "AZR226", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=b4ab083b-17b9-e111-b8c3-001ec953730b" },
 					{ "AZR317", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=30769419-08a6-e111-b8c3-001ec953730b" },
 					{ "AZR323a", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=8dc32ec2-5abf-e111-b8c3-001ec953730b" },
 					{ "AZR323b", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=a8616128-2cb6-e111-b8c3-001ec953730b" },
