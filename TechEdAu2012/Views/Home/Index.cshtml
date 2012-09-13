@@ -86,6 +86,10 @@
 		<p>@session.Abstract</p>
         <h3>@session.Room</h3>
         <h4>@session.Track</h4>
+        @if (TechEdAu2012.Models.Evaluation.TheCodes.ContainsKey(session.Code))
+        {
+            <a href="@TechEdAu2012.Models.Evaluation.TheCodes[session.Code]">EVALUATE ME</a>
+        }
 	</div>
 </div>
 }

@@ -47,6 +47,7 @@ namespace TechEdAu2012.Controllers
                                                     session.s.Room
                                             select new SessionViewModel
                                             {
+                                                Id = session.s.SessionID,
                                                 Start = session.s.StartTime.Value.ToShortTimeString(),
                                                 End = session.s.EndTime.Value.ToShortTimeString(),
                                                 Code = session.s.Code,

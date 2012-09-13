@@ -25,5 +25,7 @@ namespace TechEdAu2012.Models
         public string Track { get; set; }
         public string Level { get; set; }
         public string Speakers { get; set; }
+
+        public int Id { get; set; }
     }
 }
