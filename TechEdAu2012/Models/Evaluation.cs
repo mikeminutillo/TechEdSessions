@@ -1,7 +1,7 @@
 ﻿
 
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
 namespace TechEdAu2012.Models
 {
