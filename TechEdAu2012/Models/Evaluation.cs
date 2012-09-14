@@ -77,7 +77,6 @@ namespace TechEdAu2012.Models {
 					{ "OSP321", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=b6c575a3-8dd4-e111-84a1-001ec953730b" },
 					{ "OSP322", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=c7237a54-8dd4-e111-84a1-001ec953730b" },
 					{ "OSP331", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=9cb25be0-d4da-e111-84a1-001ec953730b" },
-					{ "OSP433", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=bd0e1d4b-79b8-e111-b8c3-001ec953730b" },
 					{ "SIM212", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=ffbc1808-1fa6-e111-b8c3-001ec953730b" },
 					{ "SIM216", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=069db955-8eb6-e111-b8c3-001ec953730b" },
 					{ "SIM311", "https://australia.msteched.com/ws/evalselect.aspx?sessionid=30695d45-1aa6-e111-b8c3-001ec953730b" },
